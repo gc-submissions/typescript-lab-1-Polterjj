@@ -1,4 +1,4 @@
-interface Product {
+export interface Product {
   name: string;
   price: number;
 }
@@ -9,7 +9,7 @@ const products: Product[] = [
   { name: "book", price: 20 },
 ];
 
-const calcAverageProductPrice = (array: Product[]): number => {
+export const calcAverageProductPrice = (array: Product[]): number => {
   if (array) {
     let sum: number = array
       .map((item) => item.price)
@@ -21,8 +21,5 @@ const calcAverageProductPrice = (array: Product[]): number => {
   }
 };
 
-let result: number = calcAverageProductPrice(products);
-
-console.log(result);
-
-export { Product, calcAverageProductPrice };
+const average = calcAverageProductPrice(products);
+console.log(average);

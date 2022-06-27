@@ -17,3 +17,9 @@ function findNameOfTallestMountain(mountains: Mountain[]) {
 }
 
 findNameOfTallestMountain(mountains);
+
+let result: Mountain = findNameOfTallestMountain(mountains);
+
+Console.log(result)
+
+export {Mountain, findNameOfTallestMountain}
