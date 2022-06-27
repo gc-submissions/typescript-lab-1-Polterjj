@@ -15,4 +15,5 @@ function findNameOfTallestMountain(mountains: Mountain[]) {
     console.log(mountain.height);
   });
 }
+
 findNameOfTallestMountain(mountains);
